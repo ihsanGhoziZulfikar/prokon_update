@@ -49,6 +49,69 @@ $routes->get('/', 'Page::index');
 $routes->post('/login/process', 'Login::process');
 $routes->get('/logout', 'Login::logout');
 
+$routes->get('/project', 'Project::index');
+$routes->get('/project/create', 'Project::create');
+$routes->post('/project/save', 'Project::save');
+$routes->get('/project/delete/(:num)', 'Project::delete/$1');
+$routes->get('/project/edit/(:num)', 'Project::edit/$1');
+$routes->post('/project/update/(:num)', 'Project::update/$1');
+
+$routes->get('/frontPage', 'FrontPage::index');
+$routes->get('/frontPage/create', 'FrontPage::create');
+$routes->post('/frontPage/save', 'FrontPage::save');
+$routes->get('/frontPage/delete/(:num)', 'FrontPage::delete/$1');
+$routes->get('/frontPage/edit/(:num)', 'FrontPage::edit/$1');
+$routes->post('/frontPage/update/(:num)', 'FrontPage::update/$1');
+
+$routes->get('/store', 'Store::index');
+$routes->get('/store/create', 'Store::create');
+$routes->post('/store/save', 'Store::save');
+$routes->get('/store/delete/(:num)', 'Store::delete/$1');
+$routes->get('/store/edit/(:num)', 'Store::edit/$1');
+$routes->post('/store/update/(:num)', 'Store::update/$1');
+
+$routes->get('/category', 'Category::index');
+$routes->get('/category/create', 'Category::create');
+$routes->post('/category/save', 'Category::save');
+$routes->get('/category/delete/(:num)', 'Category::delete/$1');
+$routes->get('/category/edit/(:num)', 'Category::edit/$1');
+$routes->post('/category/update/(:num)', 'Category::update/$1');
+
+$routes->get('/room', 'Room::index');
+$routes->get('/room/create', 'Room::create');
+$routes->post('/room/save', 'Room::save');
+$routes->get('/room/delete/(:num)', 'Room::delete/$1');
+$routes->get('/room/edit/(:num)', 'Room::edit/$1');
+$routes->post('/room/update/(:num)', 'Room::update/$1');
+
+$routes->get('/aboutUs', 'AboutUs::index');
+$routes->get('/aboutUs/create', 'AboutUs::create');
+$routes->post('/aboutUs/save', 'AboutUs::save');
+$routes->get('/aboutUs/delete/(:num)', 'AboutUs::delete/$1');
+$routes->get('/aboutUs/edit/(:num)', 'AboutUs::edit/$1');
+$routes->post('/aboutUs/update/(:num)', 'AboutUs::update/$1');
+
+$routes->get('/ourTeam', 'OurTeam::index');
+$routes->get('/ourTeam/create', 'OurTeam::create');
+$routes->post('/ourTeam/save', 'OurTeam::save');
+$routes->get('/ourTeam/delete/(:num)', 'OurTeam::delete/$1');
+$routes->get('/ourTeam/edit/(:num)', 'OurTeam::edit/$1');
+$routes->post('/ourTeam/update/(:num)', 'OurTeam::update/$1');
+
+$routes->get('/contactUs', 'ContactUs::index');
+$routes->get('/contactUs/create', 'ContactUs::create');
+$routes->post('/contactUs/save', 'ContactUs::save');
+$routes->get('/contactUs/delete/(:num)', 'ContactUs::delete/$1');
+$routes->get('/contactUs/edit/(:num)', 'ContactUs::edit/$1');
+$routes->post('/contactUs/update/(:num)', 'ContactUs::update/$1');
+
+$routes->get('/cart', 'Cart::index');
+$routes->post('/cart/add', 'Cart::add');
+$routes->get('/cart/plusButton/(:num)', 'Cart::plusButton/$1');
+$routes->get('/cart/removeButton/(:num)', 'Cart::removeButton/$1');
+$routes->get('/cart/minButton/(:num)', 'Cart::minButton/$1');
+
+$routes->post('/contact', 'Contact::index');
 
 
 /*
